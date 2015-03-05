@@ -81,11 +81,11 @@
 			"click a.tag" : "setTag"
 		},
 		setTag : function(e) {
-			e.preventDefault();
-			var href = $(e.currentTarget).attr('href');
-			var tmp = href.split('/');
-			this.tag = _.last(tmp);
-			this.trigger("change:filters", "tag");
+			//e.preventDefault();
+			//var href = $(e.currentTarget).attr('href');
+			//var tmp = href.split('/');
+			//this.tag = _.last(tmp);
+			//this.trigger("change:filters", "tag");
 		},
 		setSorting : function(value) {
 			if(this.sorting!=value) {
