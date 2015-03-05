@@ -607,7 +607,7 @@
 		if(base!=='http://webplatformtools.org/'){
 			base = '/webplatformtools.org/';
 		} else {
-			base = '/#/';
+			base = '/#';
 		}
 
 		Backbone.history.start({
