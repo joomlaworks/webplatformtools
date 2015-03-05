@@ -320,7 +320,7 @@
 	var AppRouter = Backbone.Router.extend({
 		routes : {
 			"category/*category" : "categoryFilter",
-			"tag/:tag" : "tagFilter",
+			"tag/*tag" : "tagFilter",
 			"featured" : "featuredFilter",
 			"" : "featuredFilter",
 			"new" : "newFilter",
