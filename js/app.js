@@ -55,7 +55,6 @@
 			this.rows = rows;
 			this.title = 'Featured';
 			this.counter = this.rows.length;
-			// this.render();
 			this.on("change:sorting", this.sortCollection, this);
 			this.on("change:filters", this.filterCollection, this);
 			this.collection.on("reset", this.render, this);
@@ -77,16 +76,6 @@
 		},
 
 		// Add ui events
-		events : {
-			"click a.tag" : "setTag"
-		},
-		setTag : function(e) {
-			//e.preventDefault();
-			//var href = $(e.currentTarget).attr('href');
-			//var tmp = href.split('/');
-			//this.tag = _.last(tmp);
-			//this.trigger("change:filters", "tag");
-		},
 		setSorting : function(value) {
 			if(this.sorting!=value) {
 				this.sorting = value;
@@ -120,7 +109,6 @@
 				};
 			}
 			this.collection.sort();
-			// this.collection.reset(this.collection.models);
 		},
 
 		// Filter the view
@@ -372,6 +360,7 @@
 		} else {
 			row.tags = new Array();
 		}
+
 		row.tag = row.tags;
 
 		row.description = wordLimit(row.description, 20); // Set description word limit here
@@ -548,7 +537,8 @@
 		// Our Accordion Menu
 		$("#navigation ul li").has('ul').addClass('parent closedPane');
 		$("#navigation ul li.parent").prepend('<span class="accordionToggle icon icon-right-dir"></span>');
-		// the accordion
+
+		// The accordion
 		$(".accordionToggle").click(function(e) {
 
 			$(this).toggleClass('openPane icon-down-dir icon-right-dir');
@@ -560,7 +550,7 @@
 			}
 		});
 
-		// clicking on any element closes the accordion
+		// Clicking on any element closes the accordion
 		$("#navigation ul li a").click(function(e) {
 			// check if it is a sub menu item we are clicking
 			if ( $(this).parents().hasClass('parent')  ) {
@@ -577,7 +567,7 @@
 		$activeAcc.parent().show();
 		$activeAcc.parent().parent().find(".accordionToggle").addClass('openPane');
 
-		// convert menu to a <select> object
+		// Convert menu to a <select> object
 		$("<select />").appendTo("nav#navigation");
 
 		// Create default option "Go to..."
@@ -599,7 +589,7 @@
 		$("nav#navigation select").customSelect();
 		$("select#categories").customSelect();
 
-		// Create router instance
+		// ***** Create router instance *****
 		router = new AppRouter();
 
 		// Start history service
