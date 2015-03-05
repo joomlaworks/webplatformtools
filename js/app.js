@@ -151,7 +151,7 @@
 					this.tag = this.tag.replace('%20', ' ');
 					var filter = this.tag;
 					this.title = this.tag;
-					router.navigate('/tag/' + this.tag);
+					//router.navigate('/tag/' + this.tag);
 				} else if (mode === 'featured') {
 					var filter = this.featured;
 					this.title = 'Featured';
