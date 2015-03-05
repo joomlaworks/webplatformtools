@@ -148,6 +148,7 @@
 					$('a[href="' + this.path + '"]').parent().addClass('active');
 					router.navigate(this.path);
 				} else if (mode === 'tag') {
+					this.tag = this.tag.replace('%20', ' ');
 					var filter = this.tag;
 					this.title = this.tag;
 					router.navigate('/tag/' + this.tag);
