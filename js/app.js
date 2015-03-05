@@ -334,7 +334,6 @@
 			directory.trigger("change:filters", 'category');
 		},
 		tagFilter : function(tag) {
-			console.info(tag);
 			directory.tag = tag.toLowerCase();
 			directory.trigger("change:filters", 'tag');
 		},
