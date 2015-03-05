@@ -324,7 +324,7 @@
 			"featured" : "featuredFilter",
 			"" : "featuredFilter",
 			"new" : "newFilter",
-			"search/:search" : "searchFilter"
+			"search/:search" : "searchFilter",
 		},
 		categoryFilter : function(path) {
 			directory.path = 'category/' + path;
@@ -393,9 +393,9 @@
 	function prepareCategory(category) {
 		category.alias = category.title.toLowerCase().replace(/( |\s|\\|\/)/g, '-');
 		if (category.parent) {
-			category.link = '#/' + category.parentLink + '/' + category.alias;
+			category.link = category.parentLink + '/' + category.alias;
 		} else {
-			category.link = '#/' + 'category/' + category.alias;
+			category.link = 'category/' + category.alias;
 		}
 		category.children = getCategoryChildren(category);
 		category.rows = getCategoryRows(category);
@@ -471,7 +471,7 @@
 	}
 
 	// Get the data
-	$.getJSON('js/data.json?v=20150305_1435', function(json) {
+	$.getJSON('js/data.json?v=20150305_1455', function(json) {
 		var data = {
 			categories : [],
 			rows : []
