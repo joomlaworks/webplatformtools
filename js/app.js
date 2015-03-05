@@ -610,7 +610,7 @@
 		}
 
 		Backbone.history.start({
-			pushState: true,
+			pushState: false,
 			root: base
 		});
 
