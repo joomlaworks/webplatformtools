@@ -84,7 +84,7 @@
 			e.preventDefault();
 			var href = $(e.currentTarget).attr('href');
 			var tmp = href.split('/');
-			this.tag = tmp[1];
+			this.tag = _.last(tmp);
 			this.trigger("change:filters", "tag");
 		},
 		setSorting : function(value) {
