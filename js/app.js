@@ -320,7 +320,7 @@
 	var AppRouter = Backbone.Router.extend({
 		routes : {
 			"category/*category" : "categoryFilter",
-			"tag/*tag" : "tagFilter",
+			"tag/:tag" : "tagFilter",
 			"featured" : "featuredFilter",
 			"" : "featuredFilter",
 			"new" : "newFilter",
@@ -334,6 +334,7 @@
 			directory.trigger("change:filters", 'category');
 		},
 		tagFilter : function(tag) {
+			console.info(tag);
 			directory.tag = tag.toLowerCase();
 			directory.trigger("change:filters", 'tag');
 		},
