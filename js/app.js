@@ -128,7 +128,7 @@
 				this.counter = this.collection.length;
 				this.title = 'Search results for ' + this.search;
 				this.setTitle();
-				router.navigate('search/' + this.search);
+				router.navigate('//search/' + this.search);
 			} else {
 				if (mode === 'category') {
 					var filter = this.category;
@@ -144,13 +144,13 @@
 					var filter = this.featured;
 					this.title = 'Featured';
 					$('#featuredFilter').parent().addClass('active');
-					router.navigate('/');
+					router.navigate('#/featured');
 				} else if (mode === 'new') {
 					var filter = this.isNew;
 					this.title = 'New';
 					mode = 'isNew';
 					$('#newFilter').parent().addClass('active');
-					router.navigate('new');
+					router.navigate('#/new');
 				}
 				var active = filter;
 				var filtered = _.filter(this.collection.models, function(item) {
@@ -189,7 +189,7 @@
 
 			// Set the featured and new links
 			var menu = new Menu(roots);
-			var dom = $('<ul class="level-0"><li class="active"><a id="featuredFilter" href="featured"><i class="icon icon-star"></i><span>Featured</span><span class="numOfRows">0</span></a></li><li><a id="newFilter" href="new"><i class="icon icon-leaf"></i><span>New</span><span class="numOfRows">0</span></a></li></ul>');
+			var dom = $('<ul class="level-0"><li class="active"><a id="featuredFilter" href="#/featured"><i class="icon icon-star"></i><span>Featured</span><span class="numOfRows">0</span></a></li><li><a id="newFilter" href="#/new"><i class="icon icon-leaf"></i><span>New</span><span class="numOfRows">0</span></a></li></ul>');
 			var html = this.renderMenu(menu.models, dom, 0);
 
 			// Update num of rows so it works recursively
