@@ -595,7 +595,7 @@
 		// Start history service
 		var base = $('base').attr('href');
 		if(base!=='http://webplatformtools.org/'){
-			base = '/webplatformtools.org/';
+			base = '/webplatformtools/';
 		} else {
 			base = '/#/';
 		}
