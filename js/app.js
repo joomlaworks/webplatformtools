@@ -594,11 +594,14 @@
 
 		// Start history service
 		var base = $('base').attr('href');
+
+		/*
 		if(base!=='http://webplatformtools.org/'){
 			base = '/webplatformtools/';
 		} else {
 			base = '/#/';
 		}
+		*/
 
 		Backbone.history.start({
 			pushState: false,
