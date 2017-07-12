@@ -1,2 +1,0 @@
-# webplatformtools.org
-WebPlatformTools.org
