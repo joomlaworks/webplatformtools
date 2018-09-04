@@ -322,9 +322,9 @@ ul#tags li span:hover {opacity:1;}
 .dd-option:hover {background:#E3E0DD;color:#000;}
 .dd-selected-description-truncated {text-overflow:ellipsis;white-space:nowrap;}
 .dd-option-selected {background:#F7F4F0;}
-span.imgDDWrap {vertical-align:middle;display:inline-block;margin-right:8px;width:16px;float:none!important;}
+span.imgDDWrap {vertical-align:middle;display:inline-block;}
 .dd-option-image,
-.dd-selected-image {}
+.dd-selected-image {margin-right:8px!important;width:16px!important;float:none!important;}
 .dd-image-right {float:right;margin-right:15px;margin-left:5px;}
 .dd-container {position:relative;display:inline-block;vertical-align:middle;}
 .dd-selected-text {}
