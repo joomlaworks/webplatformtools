@@ -315,7 +315,8 @@ ul#tags li span:hover {opacity:1;}
 .dd-selected>img {display:none;}
 .dd-pointer {width:0;height:0;position:absolute;right:10px;top:50%;margin-top:-3px;display:none;}
 .dd-options {border:solid 1px #ccc;border-top:none;list-style:none;box-shadow:0px 1px 5px #ddd;display:none;position:absolute;z-index:2000;margin:0;padding:0;background:#fff;overflow:auto;text-align:left;}
-.dd-option {height:32px!important;padding:10px!important;display:block;border-bottom:solid 1px #ddd;overflow:hidden;text-decoration:none;color:#333;cursor:pointer;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;}
+.dd-option {height:38px!important;padding:10px!important;display:block;border-bottom:solid 1px #ddd;overflow:hidden;text-decoration:none;color:#333;cursor:pointer;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;}
+.dd-option-text {line-height:150% !important;}
 .dd-options>li:last-child>.dd-option {border-bottom:none;}
 .dd-option:hover {background:#E3E0DD;color:#000;}
 .dd-selected-description-truncated {text-overflow:ellipsis;white-space:nowrap;}
