@@ -15,7 +15,7 @@
         <base href="https://wpt.joomlaworks.net/" />
 
         <meta name="distribution" content="global" />
-        <meta name="copyright" content="Copyright (c) 2006 - 2015 JoomlaWorks Ltd." />
+        <meta name="copyright" content="Copyright (c) 2006 - 2019 JoomlaWorks Ltd." />
         <meta property="og:url" content="https://wpt.joomlaworks.net/" />
         <meta property="og:title" content="Web Platform Tools" />
         <meta property="og:type" content="website" />
@@ -40,20 +40,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900,200italic,400italic,900italic" />
         <link rel="stylesheet" href="css/template.css?v=20180905_0258" />
 
-        <!-- Google Analytics -->
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-16375363-9']);
-          _gaq.push(['_setDomainName', 'webplatformtools.org']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16375363-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-16375363-9');
         </script>
     </head>
     <body>
